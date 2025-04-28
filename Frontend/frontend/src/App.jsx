@@ -1,7 +1,6 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
-// import Home from './components/Home';
+import Navbar from "./components/Navbar";
+import Footer from './components/Footer';
 import Landingpage from './components/Landingpage'
 import PopularCategory from './components/Category'
 import ExpertFreelancers from './components/ExpertFreelancers'
@@ -16,7 +15,7 @@ function App() {
       <PopularCategory/>
       <ExpertFreelancers/>
       <HeroSection/>
-      {/* <Footer /> */}
+      <Footer />
       
       
     </div>
