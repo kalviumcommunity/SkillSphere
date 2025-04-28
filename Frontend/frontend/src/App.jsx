@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 // import Home from './components/Home';
 import Landingpage from './components/Landingpage'
 import PopularCategory from './components/Category'
-// import ExpertFreelancers from './components/ExpertFreelancers'
-// import HeroSection from './components/HeroSection'
+import ExpertFreelancers from './components/ExpertFreelancers'
+import HeroSection from './components/HeroSection'
 import './App.css';
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
       <Navbar />
       <Landingpage/>
       <PopularCategory/>
-      {/* <ExpertFreelancers/> */}
-      {/* <HeroSection/> */}
+      <ExpertFreelancers/>
+      <HeroSection/>
       {/* <Footer /> */}
       
       
