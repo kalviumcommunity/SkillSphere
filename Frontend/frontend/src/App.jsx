@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
 // import Home from './components/Home';
 import Landingpage from './components/Landingpage'
-// import PopularCategory from './components/Category'
+import PopularCategory from './components/Category'
 // import ExpertFreelancers from './components/ExpertFreelancers'
 // import HeroSection from './components/HeroSection'
 import './App.css';
@@ -13,8 +13,7 @@ function App() {
     <div className="app-container">
       <Navbar />
       <Landingpage/>
-      {/* <Home /> */}
-      {/* <PopularCategory/> */}
+      <PopularCategory/>
       {/* <ExpertFreelancers/> */}
       {/* <HeroSection/> */}
       {/* <Footer /> */}
