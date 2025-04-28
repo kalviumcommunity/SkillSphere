@@ -1,0 +1,87 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    background-color: #e0f7fa; /* Light teal background, adjust as needed */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px; /* Adjust margin as needed */
+    overflow: hidden; /* To contain the image within rounded corners */
+  }
+  
+  .hero-content {
+    flex: 1;
+    padding-right: 40px; /* Space between text and image */
+  }
+  
+  .freelancers-label {
+    color: #00acc1; /* Teal accent color */
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #212121; /* Dark text color */
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .hero-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .join-button {
+    background-color: #00acc1; /* Teal button color */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .join-button:hover {
+    background-color: #008ba7; /* Darker teal on hover */
+  }
+  
+  .hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Match container's border-radius */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-image-container {
+      justify-content: center;
+    }
+  
+    .hero-image {
+      max-height: 300px; /* Adjust as needed */
+    }
+  }
