@@ -24,5 +24,5 @@ app.get('/user/:id' , async (req , res) => {
     
 })
 app.listen(PORT , () => {
-    console.log(`the server is running on http://localhost:${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
 })
