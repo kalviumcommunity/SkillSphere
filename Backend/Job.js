@@ -6,4 +6,4 @@ const jobschema = new mongoose.Schema ({
     skill : {type :String , required : true}
 })
 const Job = mongoose.model("Job" , jobschema);
-module.export
+module.export(Job);
