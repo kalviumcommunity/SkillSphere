@@ -20,11 +20,11 @@ mongoose.connect(process.env.MONGO_URI)
 app.post('/user', async (req, res) => {
     try {
         if (!req.body || Object.keys(req.body).length === 0) {
-            return res.status(400).json({ error: "Request body is empty" });
+            return res.status(400).json({ error: "Invalid or empty request body" });
         }
         const newUser = new User(req.body);
-        const savedUser = await newUser.save();
-        res.status(201).json({ message: "new user added", newUser: savedUser });
+        const result = await newUser.save();
+        res.status(201).json({ message: "new user added", newUser: result });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
