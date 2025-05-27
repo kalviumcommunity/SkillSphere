@@ -7,7 +7,7 @@ app.use(express.json());
 
 const PORT = 5000;
 
-mongoose.set('debug', true); // Enable Mongoose debugging
+mongoose.set('debug', true); 
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
@@ -19,9 +19,12 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.post('/user', async (req, res) => {
     try {
+        if (!req.body || Object.keys(req.body).length === 0) {
+            return res.status(400).json({ error: "Invalid or empty request body" });
+        }
         const newUser = new User(req.body);
-        await newUser.save();
-        res.status(201).json({ message: "new user added", newUser });
+        const result = await newUser.save();
+        res.status(201).json({ message: "new user added", newUser: result });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
